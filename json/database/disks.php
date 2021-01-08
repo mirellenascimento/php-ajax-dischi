@@ -2,7 +2,6 @@
 
 $disks = [
     "success"=> true,
-    "success"=> true,
     "response"=> [
         [
             "poster"=> "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -76,4 +75,9 @@ $disks = [
         ]
     ]
 ];
+
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin:*');
+echo json_encode($disks);
+
 ?>
